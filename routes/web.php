@@ -25,9 +25,11 @@ Route::put('/listings/{listing}', [ListingController::class,'update'])->middlewa
 Route::delete('/listings/{listing}', [ListingController::class,'destroy'])->middleware('auth');
 
 
+// Manage Listings
+Route::get('/listings/manage',[ListingController::class,'manage'])->middleware('auth');
+
 // single listing using route model binding
 Route::get('/listings/{listing}',[ListingController::class , 'show']);
-
 
 // Show Register/Create Form
 
@@ -44,3 +46,6 @@ Route::get('/login',[UserController::class,'login'])->name('login')->middleware(
 
 // Log In User
 Route::post('/users/authenticate',[UserController::class,'authenticate']);
+
+// Manage Listings
+Route::get('/listings/manage',[ListingController::class,'manage']);

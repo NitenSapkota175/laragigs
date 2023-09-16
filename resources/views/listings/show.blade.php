@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>
-
+{{-- 
    <x-card class="mt-4 p-2 flex space-x-6"> 
         <a href="/listings/{{$listing->id}}/edit">
             <i class="fa-solid fa-pencil mx-2"></i>Edit
@@ -57,7 +57,7 @@
             <button class="text-red-500"><i class="fa-solid fa-trash mx-2"></i>Delete</button>
         </form>
 
-   </x-card>
+   </x-card> --}}
 
     </x-card>
 </div>
