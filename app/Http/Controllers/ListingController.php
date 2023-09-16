@@ -80,4 +80,10 @@ class ListingController extends Controller
         return redirect('/')->with('message','Listing created successfully!');
  }    
 
+    // Delete  Listing
+    public function destroy(Listing $listing){
+            $listing->delete();
+            return redirect('/')->with('message','listing deleted successfully');
+    }
+
 }
