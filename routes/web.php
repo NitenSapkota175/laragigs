@@ -20,6 +20,9 @@ Route::get('/listings/{listing}/edit',[ListingController::class ,'edit']);
 // update listing
 Route::put('/listings/{listing}', [ListingController::class,'update']);
 
+// Delete listing
+Route::delete('/listings/{listing}', [ListingController::class,'destroy']);
+
 
 // single listing using route model binding
 Route::get('/listings/{listing}',[ListingController::class , 'show']);
